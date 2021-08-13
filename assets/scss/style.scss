@@ -1,0 +1,11 @@
+// ПОРЯДОК import - ОЧЕНЬ ВАЖЕН!
+@import "../../libs/normalize-scss/sass/normalize/import-now";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+@import "common/fonts";
+@import "common/colors";
+@import "common/myreset";
+@import "common/variables";
+
+@import "registr-form";
+@import "main";

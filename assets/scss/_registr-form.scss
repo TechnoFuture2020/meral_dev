@@ -1,0 +1,381 @@
+html {
+  background-color: $color-main-white;
+}
+
+body {
+  background-color: $color-main-white;
+  @media (max-width: 400px) {
+    background-color: $color-main-white;
+  }
+}
+.container-xl {
+  @media (min-width: 1500px) {
+    max-width: 1440px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1140px;
+  }
+}
+
+
+
+
+
+
+.header {
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+}
+
+.header__logo1 {
+  margin-left: 3.45%;
+  margin-top: 53px;
+  @media (max-width: 400px) {
+    margin-top: 40px;  
+  }
+}
+
+
+.registr {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  @media (max-width: 576px) {
+    padding: 0 20px;
+  }
+}
+
+.registr-header-3 {
+  margin-top: -3px;
+  margin-right: 2px;  
+  margin-bottom: 36px;
+  font: {
+    family: $Noirpro-light;
+    size: 30px;
+  }
+  line-height: 40.8px;
+  text-align: center;
+  color: $color-violet-dark;
+  @media (max-width: 400px) {
+    margin-bottom: 20px;
+  }
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="email"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder {
+  color: $color-violet-light-secondary;
+  transition: all 0.7s;
+}
+
+
+input[type="search"]::placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="search"]::-moz-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="search"]::-ms-input-placeholder {
+  color: $color-violet-light-secondary;
+  transition: all 0.7s;
+}
+
+
+input[type="email"]:hover::placeholder,
+input[type="email"]:hover::-webkit-input-placeholder,
+input[type="email"]:hover::-moz-placeholder,
+input[type="email"]:hover:-ms-input-placeholder,
+input[type="email"]:hover::-ms-input-placeholder,
+input[type="password"]:hover::placeholder,
+input[type="password"]:hover::-webkit-input-placeholder,
+input[type="password"]:hover::-moz-placeholder,
+input[type="password"]:hover:-ms-input-placeholder,
+input[type="password"]:hover::-ms-input-placeholder {
+  color: $color-logo-violet;
+}
+
+
+input[type="search"]:hover::placeholder,
+input[type="search"]:hover::-webkit-input-placeholder,
+input[type="search"]:hover::-moz-placeholder,
+input[type="search"]:hover:-ms-input-placeholder,
+input[type="search"]:hover::-ms-input-placeholder {
+  color: $color-violet-dark;
+}
+
+input[type="search"]:focus::placeholder,
+input[type="search"]:focus::-webkit-input-placeholder,
+input[type="search"]:focus::-moz-placeholder,
+input[type="search"]:focus:-ms-input-placeholder,
+input[type="search"]:focus::-ms-input-placeholder {
+  color: $color-light-orange;
+}
+
+
+
+
+
+
+
+
+.form {
+  margin-left: -7px;
+  @media (max-width: 400px) {
+    margin-left: 0;
+  }
+
+  &__container {
+    // min-width: 352px;
+    justify-items: center;
+    margin-left: 2.4%;
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    // min-width: 352px;
+    min-height: 70px;
+    margin-left: -1px;
+    margin-bottom: 20px;
+    font: {
+      family: $Noirpro-reg;
+      size: 18px;
+    }
+    line-height: 24.48px;
+    letter-spacing: 0.02em;
+    border: none;
+    border-radius: 4px;
+    background-color: $color-main-white;
+    box-shadow: 0 3px 10px 0 rgba(88, 19, 27, 0.1);
+    transition: background-color 0.5s, border 0.7s, box-shadow 0.5s;
+    &:hover {
+        background-color: $color-whitesmoke;
+        border-color: $color-gray;
+        box-shadow: inset 0 3px 10px 0 rgba(88, 19, 27, 0.1);
+    }
+    &:focus {
+      border-color: $color-dark-orange;
+      background-color: $color-light-orange;
+    }
+
+
+    &[type="submit"]:hover {
+        animation: scaleCircle 1.5s infinite ease-in-out;
+    }
+
+    &:nth-child(1), &:nth-child(2) {
+      padding-bottom: 20px;
+      padding-left: 15px;
+      box-shadow: 0 3px 10px 0 $color-shadow;
+    }
+  
+    &:nth-child(1) {
+      padding-top: 24px;
+    }
+    &:nth-child(2) {
+      padding-top: 23px;
+    }
+    &:nth-child(4) {
+      margin-top: 44px;
+      padding-top: 3px;
+      padding-left: 2px;
+      font: {
+        family: $Noirpro-bold;
+        size: 20px;
+      }
+      line-height: 24px;
+      color: $color-main-white;
+      background-color: $color-main-red;
+      transition: background-color 0.2s, border-color 0.3s;
+      &:hover {
+        box-shadow: none;
+        background-color: $color-main-white;
+        border: 2px solid $color-main-red;
+        color: $color-main-red;
+      }
+      &:active {
+          background-color: $color-main-red;
+          border-color: $color-gray;
+          color: $color-main-white;
+      }
+      @media (max-width: 400px) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &-reset-pass {
+    justify-content: center;
+    margin-left: -32px;
+    padding-top: 2px;
+    line-height: 24.48px;
+    @media (max-width: 576px) {
+      margin-left: 0;
+    }
+
+  
+    &__email {
+      margin-left: 10px;
+      position: relative;
+      &:hover {
+        animation: scaleCircle2 1.5s infinite ease-in-out;
+      }
+  
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        height: 1px;
+        background: $color-main-red;
+        width: 100%;
+        @media (max-width: 400px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__header-4 {
+    font: {
+      family: $Noirpro-reg;
+      size: 24px;
+      }
+    line-height: 32.64px;
+    text-align: center;
+    margin-top: 24px;
+    margin-left: -3px;
+  }
+
+}
+
+.main-text {
+  font: {
+    family: $Noirpro-reg;
+    size: 18px;
+  }
+  &_violet {
+    color: $color-violet-dark;
+  }
+  &_red {
+    color: $color-main-red;
+  }
+}
+
+.social-group {
+  min-width: 352px;
+  margin-top: 17px;
+  margin-left: -1px;
+  margin-right: 1px;
+  justify-content: center;
+  justify-content: space-between;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    min-height: 150px;
+  }
+  @media (max-width: 400px) {
+    min-width: 0;
+    min-height: 130px;
+    margin-top: 24px;
+  }
+}
+
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
+  min-height: 60px;
+  border: 1px solid;
+  border-radius: 4px;
+  font: {
+    family: $Noirpro-bold;
+    size: 16px;
+    }
+  line-height: 20.8px;
+  text-align: center;
+  &:hover {
+    animation: scaleCircle 1.5s infinite ease-in-out;
+  }
+
+  &__facebook {
+    border-color: $color-main-blue;
+    color: $color-main-blue;
+    i.facebook__icon {
+      position: relative;
+      padding-right: 35px;
+      &::after {
+        content: url(../img/icons/facebook.svg);
+        display: inline-block;
+        position: absolute;
+        left: 8%;
+        bottom: -10px;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  &__google {
+    border-color: $color-main-red;
+    color: $color-main-red;
+    i.google__icon {
+      position: relative;
+      padding-right: 35px;
+      &::after {
+        content: url(../img/icons/google.svg);
+        display: inline-block;
+        position: absolute;
+        left: 7.2%;
+        top: -10px;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+}
+
+
+.form-create-account {
+  margin-top: 45px;
+  margin-left: 7px;
+  @media (max-width: 576px) {
+    margin-top: 30px;
+  }
+}
+
+.form-sign-up {
+  position: relative;
+  display: inline-flex;
+  &:hover {
+    animation: scaleCircle2 1.5s infinite ease-in-out;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    height: 1px;
+    background: $color-main-red;
+    width: 100%;
+  }
+}
+
+
+.footer-form {
+  margin-right: 49px;
+  margin-top: 0px;
+  font: {
+    family: $Noirpro-reg;
+    size: 14px;
+    }
+  color: $color-violet-light-secondary;
+  line-height: 19.04px;
+  text-align: right;
+}
